@@ -16,7 +16,7 @@ import ForgotPassword from "./pages/ForgotPassword"
 import ResetPassword from "./pages/ResetPassword"
 import ResetPasswordConfirm from "./pages/ResetPasswordConfirm"
 import SuperAdmin from "./pages/SuperAdmin"
-import Admin from "./pages/Admin"
+import Admin from "./pages/SuperAdmin"
 
 function App() {
 	const [user, setUser] = useState<User>({
