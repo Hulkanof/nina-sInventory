@@ -10,7 +10,6 @@ import "../styles/Admin.css"
  */
 const Admin: React.FC<defaultPageProps> = props => {
 	const { user, token } = props
-	const [type, setType] = useState("")
     const [newData, setNewData] = useState<FileList | null>(null)
 
 
@@ -19,7 +18,7 @@ const Admin: React.FC<defaultPageProps> = props => {
             const file = newData[0]
             if (!file) return
 
-            add(token,type,file).catch(err => console.log(err))
+            add(token,file).catch(err => console.log(err))
         }
     }
 
@@ -34,7 +33,6 @@ const Admin: React.FC<defaultPageProps> = props => {
 				<div className="main-admin">
 					<div className="uploadData">
                         <div className="uploadData-title-text">Upload new data : </div>
-                        <input type="text" className="uploadData-input-text" placeholder="Data Type" onChange={e => setType(e.target.value)} />
                         <input type="file" className="uploadData-input-file" onChange={e => setNewData(e.target.files)} />
                         <button className="uploadData-input-button" onClick={handleAddData}>Upload</button>
                     </div>
