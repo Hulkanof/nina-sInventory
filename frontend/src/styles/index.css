@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1;0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+:root {
+	--main-bg-color1: "#121212";
+	--main-bg-color2: "#1d1d1d";
+	--main-bg-color3: "#2d2d2d";
+	--main-text-color: "#ffffff";
+	--accent-color: "#bb86fc";
+	--accent-color2: "#77529E";
+}
+
+body {
+	width: 100%;
+	display: flex;
+	background-color: #121212;
+	color: "#ffffff";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+#root {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+
+* {
+	color: #ffffff;
+	box-sizing: border-box;
+	font-family: "Ysabeau", sans-serif;
+}
+
+.grid {
+	display: grid;
+}
+
+.h-full {
+	height: 100%;
+}
+
+/* Works on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 0.2rem;
+}
+
+*::-webkit-scrollbar-track {
+	background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: grey;
+	border-radius: 20px;
+}
+
+.main-home {
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	z-index: 1;
+	border: 2px solid #77529e;
+	border-radius: 0.5rem;
+}

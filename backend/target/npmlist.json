@@ -1,0 +1,19 @@
+{
+	"version": "1.0.0",
+	"name": "backend",
+	"dependencies": {
+		"@prisma/client": { "version": "4.13.0" },
+		"cookie-parser": { "version": "1.4.6" },
+		"discord.js": { "version": "14.10.2" },
+		"dotenv": { "version": "16.0.3" },
+		"express": { "version": "4.18.2" },
+		"jsonwebtoken": { "version": "9.0.0" },
+		"module-alias": { "version": "2.2.2" },
+		"nodemon": { "version": "2.0.22" },
+		"prettier": { "version": "2.8.8" },
+		"readline-sync": { "version": "1.4.10" },
+		"rivescript": { "version": "2.2.1" },
+		"ts-node": { "version": "10.9.1" },
+		"ws": { "version": "8.13.0" }
+	}
+}

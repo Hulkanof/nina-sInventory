@@ -1,0 +1,82 @@
+body {
+	width: 100%;
+	display: grid;
+	background-color: #121212;
+	color: "#ffffff";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+.main-admin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    z-index: 1;
+}
+
+.uploadData{
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 2px solid;
+    border-color: #77529e;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.uploadData-title{
+    font-size: 1.5rem;
+}
+
+.uploadData-input-text{
+    font-size: large;
+	width: 20rem;
+	height: 2rem;
+	border: none;
+	border-bottom: 1px solid #2d2d2d;
+	background-color: #121212;
+	color: #ffffff;
+}
+
+.uploadData-input-text:focus{
+    outline: none;
+	border-bottom-color: #bb86fc;
+}
+
+.uploadData-input-file{
+    font-size: large;
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid #2d2d2d;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.uploadData-input-file:focus{
+    outline: none;
+    border-bottom-color: #bb86fc;
+}
+
+
+.uploadData-input-button{
+    font-size: large;
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #77529e;
+    color: #ffffff;
+}
+
+.uploadData-input-button:hover{
+    background-color: #bb86fc;
+    cursor: pointer;
+}
+

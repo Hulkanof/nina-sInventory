@@ -1,0 +1,39 @@
+@mixin transition($property) {
+	transition: $property 0.2s ease-in-out;
+}
+
+.SideBarMenu {
+	background-color: #1d1d1d;
+	color: black;
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+
+	@include transition(width);
+
+	&.expanded {
+		width: 13vw;
+	}
+
+	&.collapsed {
+		width: 3vw;
+	}
+
+	.menuButton {
+		display: flex;
+		justify-content: flex-end;
+
+		.hamburgerIcon {
+			cursor: pointer;
+			border: none;
+			background-color: transparent;
+			color: black;
+			padding: 10px;
+			width: 68px;
+		}
+	}
+}
