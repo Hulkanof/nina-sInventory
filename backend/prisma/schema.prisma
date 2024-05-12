@@ -6,17 +6,40 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
+model Card {
+  id        String   @id @default(cuid()) @map("_id")
+  ninaId    String   @unique
+  name      String
+  anime     String
+  rarity    Int
+  border    String
+  shiny     Boolean
+  image     String
+  ownerId   String
+  createdAt DateTime @default(now())
+  deckId    String?
+}
+
+model Collection {
+  id        String   @id @default(cuid()) @map("_id")
+  name      String
+  priority  Int?
+  isTradable Boolean
+  createdAt DateTime @default(now())
+}
+
 model User {
-  id        String   @map("_id") @id @default(cuid())
-  email     String   @unique
-  name      String   @unique
-  password  String   
-  admin     Int      @default(0)
-  lastLogin DateTime 
-  lastIp    String
-  resetToken String?  
+  id         String   @id @default(cuid()) @map("_id")
+  ninaId     String?  @unique
+  email      String   @unique
+  name       String   @unique
+  password   String
+  admin      Int      @default(0)
+  lastLogin  DateTime
+  lastIp     String
+  resetToken String?
 }
